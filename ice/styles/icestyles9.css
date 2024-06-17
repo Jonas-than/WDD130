@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+
+}
+
+.card{
+    width: 250px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.headerimage{
+    width: 100%;
+}
+
+.awesomearticle{
+    padding: 10%;
+    text-align: center;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+.grid-box{
+    background-color: #3F5B8B;
+    color: white;
+    padding: 20%;
+    text-align: center;
+
+    justify-content: center;
+    justify-items: center;
+
+    border-right: .5px solid #ccc;
+    
+}
+
+.date{
+    color: #3F5B8B;
+}
+h1{
+    font-weight: 900;
+}
+
+.footer-text{
+    font-size: 10px;
+}
+
+.header{
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
