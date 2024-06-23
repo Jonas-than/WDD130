@@ -223,6 +223,27 @@ footer .social img{
     gap: 10px
 }
 
+.frequently-header{
+    display: grid;
+}
+
+.title-faq{
+    color: white;
+    font-size: 4em;
+}
+
+.main-faq{
+    margin: 0 10%;
+}
+
+.question-bold{
+    font-weight: 900;
+}
+
+.answer{
+    margin: 0 15%;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
