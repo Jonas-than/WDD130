@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
         </style>
@@ -15,12 +16,26 @@
         <a id="logo_link" href="index.html">
             <img class="logo" src="../images/logo-dry.png" alt="Dry Oar Logo">
         </a>
-        <nav>
+        <!-- <nav>
             <a href="index.html">Home</a>
             <a href="faq.html">FAQ</a>
             <a href="site-plan-rafting.html">Site Plan</a>
             <a href="contactus.html">Contact Us</a>
-        </nav>
+        </nav> -->
+        <div class="sidenav nav">
+            <a href="index.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <button class="dropdown-btn">Contact Us
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="contactus.html">Email</a>
+              <a href="#">Call us</a>
+              <a href="#">Social Media</a>
+            </div>
+            <a href="#contact">Search</a>
+          </div>
     </header>
     <div id="hero">
         <div id="hero-box">
@@ -75,5 +90,6 @@
         </div>
     </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

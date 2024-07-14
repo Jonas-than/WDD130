@@ -26,7 +26,7 @@
     color: #7AB2B2;
 }
 
-nav a{
+.nav a{
     text-align: center;
     text-decoration: none;
     color: white;
@@ -88,9 +88,8 @@ body {
     padding: 0;
 
 }
-nav{
-    display: flex;
-    justify-content: space-around;
+.nav{
+   
 }
 header {
     /* background-color: #CDE8E5; */
@@ -98,7 +97,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
-nav a:hover {
+.nav a:hover {
     background-color: #7AB2B2;
     color: #fcfbfb;
 }
@@ -156,7 +155,9 @@ footer a{
     color: #EEF7FF;
 }
 .logo{
+    display: flex;
     width: 80px;
+    justify-content: end;
 }
 .icon{
     width: 80px;
@@ -378,4 +379,63 @@ form {
         margin-top: 25px;
     }
 }
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #111; */
+    overflow-x: hidden;
+    padding-top: 100px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: rgb(110, 110, 255);
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
 
